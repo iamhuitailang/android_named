@@ -1,0 +1,157 @@
+（1）
+包命名，单词全部小写
+域名反写+项目名称+模块名称,例如：
+
+activity包: cf.paradoxie.demo.activity
+
+实体包: cf.paradoxie.demo.bean
+
+工具包: cf.paradoxie.demo.utils
+
+（2）接口和类命名，单词首字母大写（大驼峰规则），以下为几种常用类的命名
+
+公共父类，命名以Base开头，如：BaseActivity， BaseAdapter
+
+activity类，命名以Activity为后缀，如：LoginActivity
+
+fragment类，命名以Fragment为后缀，如：LoginFragment
+
+service类，命名以Service为后缀，如：DownloadService
+
+adapter类，命名以Adapter为后缀，如：MyListAdapter
+
+工具类，命名以Util为后缀，如：StringUtil
+
+接口类，命名以I为前缀(来源于MVP模式)，如：IUser
+
+接口实现类，命名以Impl为后缀，如：UserImpl
+
+（3）方法命名，除开第一个单词首字母，其余都大写（小驼峰规则），以下为几种常用方法的命名：
+
+初始化方法，命名以init开头，例：initView
+
+设置方法，命名以set开头，例：setData
+
+储存方法，命名以save开头，例：saveData
+
+具有返回值的获取方法，命名以get开头，例：getData
+
+通过异步加载数据的方法，命名以load开头，例：loadData
+
+布尔型的判断方法，命名以is或has，或具有逻辑意义的单词如equals，例：isEmpty
+
+（4）常用控件id命名缩写
+
+控件	命名		控件	命名
+TextView	tv		RadioGroup	group
+EditText	et		RadioButton	rbtn
+Button	btn		ProgressBar	progress
+ImageView	iv		CheckBox	cb
+ImageButton	ibtn		Spinner	spinner
+ListView	lv		ScrollView	sv
+LinearLayout	ll		RelativeLayout	rl
+FramLayout	fl		TableLayout	tl
+
+（5）以上缩写为代表控件的缩写，其id全称需根据配合所在布局及其功能意义而定,缩写_{范围_}意义,例如：
+
+登录按钮：btn_login;
+
+相对布局的tab栏：rl_tab;
+
+标题栏文本：tv_head_title
+
+（6）布局 layout命名
+类型_{范围_}功能，范围可选，只在有明确定义的范围内才需要加上。
+以下为几种常用的组件类型命名：
+
+activity_{范围_}功能，为Activity的命名格式:activity_login
+
+fragment_{范围_}功能，为Fragment的命名格式
+
+dialog_{范围_}功能，为Dialog的命名格式
+
+headerlist\{范围_}功能，为ListView的HeaderView命名格式
+
+footerlist\{范围_}功能，为ListView的FooterView命名格式
+
+（7）strings的命名
+类型_{范围_}功能，范围可选。
+以下为几种常用的命名：
+
+页面标题，命名格式为：title_页面
+
+按钮文字，命名格式为：btn_按钮事件
+
+标签文字，命名格式为：label_标签文字
+
+选项卡文字，命名格式为：tab_选项卡文字
+
+消息框文字，命名格式为：toast_消息
+
+编辑框的提示文字，命名格式为：hint_提示信息
+
+图片的描述文字，命名格式为：desc_图片文字
+
+对话框的文字，命名格式为：dialog_文字
+
+menu的item文字，命名格式为：action_文字
+
+
+（8）colors的命名
+
+前缀{_控件}{_范围}{_后缀}，控件、范围、后缀可选，但控件和范围至少要有一个
+背景颜色，添加bg前缀
+
+文本颜色，添加text前缀
+
+分割线颜色，添加div前缀
+
+区分状态时，默认状态的颜色，添加normal后缀
+
+区分状态时，按下时的颜色，添加pressed后缀
+
+区分状态时，选中时的颜色，添加selected后缀
+
+区分状态时，不可用时的颜色，添加disable后缀
+
+（9） drawable的命名
+
+跟以上colors的命名类似，此处多了选择器
+
+添加selector后缀（一般为ListView的selector或按钮的selector）
+
+（10）动画文件命名
+
+动画类型_动画方向
+
+fade_in，淡入
+
+fade_out，淡出
+
+push_down_in，从下方推入
+
+push_down_out，从下方推出
+
+slide_in_from_top，从头部滑动进入
+
+zoom_enter，变形进入
+
+shrink_to_middle，中间缩小
+
+（11）
+
+变量命名
+
+只能包含字母，单词首字母除第一个外，都为大写，其他字母都为小写
+
+普通变量:mXyxy，或userBean
+
+控件变量，类型为前缀，功能在后面：btnLogin
+
+（12）常量命名
+
+全部大写,采用下划线命名法.例如：MAX_VALUE
+
+注1：单词缩写原则：尽量不要用缩写，除非该缩写是约定俗成的
+注2：方案来源于网络，修改添加了部分自己用的习惯
+（ 转）
